@@ -1,0 +1,5 @@
+*.data binary
+*.wasm binary
+*.webp binary
+*.png binary
+*.pdf binary

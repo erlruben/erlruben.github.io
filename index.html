@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Earl Batenga — Game and Web Developer</title>
+  <meta name="description" content="Earl Batenga, app and game developer in Davao City, Philippines. React, Expo and TypeScript apps, Unity games, and client tools through Recontech.">
+  <meta property="og:title" content="Earl Batenga — Game and Web Developer">
+  <meta property="og:description" content="Unity games, React and TypeScript apps, and client tools through Recontech.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://erlruben.github.io/">
+  <meta property="og:image" content="https://erlruben.github.io/assets/img/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Earl Batenga, Game and Web Developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://erlruben.github.io/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Earl Batenga",
+    "url": "https://erlruben.github.io/",
+    "image": "https://erlruben.github.io/assets/img/earl.webp",
+    "jobTitle": "Game and Web Developer",
+    "email": "mailto:erlrbn.dev@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Davao City", "addressCountry": "PH" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of the Immaculate Conception" },
+      { "@type": "CollegeOrUniversity", "name": "Mapúa Malayan Colleges Mindanao" }
+    ],
+    "knowsAbout": ["Unity", "C#", "React", "TypeScript", "Node.js", "Supabase", "Game development", "Web development"],
+    "sameAs": ["https://github.com/erlruben", "https://www.linkedin.com/in/erlruben/", "https://erl-ruben.itch.io/"]
+  }
+  </script>
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=29">
+  <script>
+    document.documentElement.classList.replace("no-js", "js");
+    // apply a saved theme before the first paint, so there is no flash of the other one
+    try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<!-- Info bar: who, where, local time, availability, links -->
+<header class="bar" id="top">
+  <nav class="bar-links" aria-label="Sections">
+    <a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </nav>
+  <button type="button" class="theme-toggle" aria-label="Switch to light mode">
+    <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg>
+    <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+</header>
+
+<main>
+  <!-- Hero: Earl's own game scenes drift slowly behind the intro -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true">
+      <img class="hero-slide is-on" src="assets/img/hero-dusk.webp" alt="" width="1920" height="758" data-caption="Blind Cargo, a dusk run" data-link="#blind-cargo">
+      <img class="hero-slide" src="assets/img/bangsak-multiplayer.webp" alt="" width="929" height="600" loading="lazy" data-caption="Bangsak Multiplayer, the village" data-link="#bangsak-multiplayer">
+      <img class="hero-slide" src="assets/img/hero-night.webp" alt="" width="1920" height="758" loading="lazy" data-caption="Blind Cargo, the night road" data-link="#blind-cargo">
+      <img class="hero-slide" src="assets/img/hero-hangar.webp" alt="" width="1920" height="970" loading="lazy" data-caption="Blind Cargo, the base hangar" data-link="#blind-cargo">
+    </div>
+    <div class="hero-content">
+      <p class="hero-status"><span class="dot" aria-hidden="true"></span>Open to remote work</p>
+      <p class="hero-kicker">App &amp; game developer · Davao City, PH <span class="hero-time">· <time class="clock" datetime="">--:--</time> PHT</span></p>
+      <h1 class="hero-name">Earl Batenga</h1>
+      <p class="hero-lede">I build apps that businesses run on and games people play.</p>
+      <p class="hero-actions">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn btn-ghost" href="mailto:erlrbn.dev@gmail.com">Email me</a>
+      </p>
+    </div>
+    <a class="hero-caption" href="#blind-cargo"><span class="muted">In the background</span> <span class="hero-caption-text">Blind Cargo, a dusk run</span></a>
+    <div class="hero-ticks" aria-hidden="true"><i class="is-on"></i><i></i><i></i><i></i></div>
+  </section>
+
+  <!-- About: same band design as RECONTECH, mirrored (photo left, text right) -->
+  <section class="studio about" id="about" aria-labelledby="about-title">
+    <div class="studio-inner about-inner">
+      <figure class="about-photo">
+        <img src="assets/img/earl.webp" alt="Earl Batenga" width="614" height="923" loading="lazy">
+      </figure>
+      <div class="studio-text">
+        <div class="studio-brand">
+          <div>
+            <h2 id="about-title">About me</h2>
+            <p class="muted">App &amp; game developer · Davao City, PH</p>
+          </div>
+        </div>
+        <p class="studio-lede">Half my work is apps: web and mobile tools like a print shop's work order system and a matcha bar's ordering kiosk. The other half is games, from Unity multiplayer to Blind Cargo, a night-driving game for Steam.</p>
+
+        <h3>Now</h3>
+        <ul class="studio-list">
+          <li><a href="#studio">Full-stack developer</a><span>RECONTECH, startup group</span></li>
+          <li><a href="#experience">QA engineer</a><span>ODD Games: Monster Truck Destruction, Trucks Off Road</span></li>
+          <li><a href="#experience">Game &amp; app instructor</a><span>Mapúa Malayan Colleges Mindanao</span></li>
+        </ul>
+
+        <h3>Open to</h3>
+        <ul class="studio-list">
+          <li><span>Remote roles and client projects</span><span class="about-links"><a href="https://github.com/erlruben" target="_blank" rel="noopener">GitHub</a> <a href="https://www.linkedin.com/in/erlruben/" target="_blank" rel="noopener">LinkedIn</a> <a href="https://erl-ruben.itch.io/" target="_blank" rel="noopener">itch.io</a> <a href="Earl-Batenga-CV.pdf" target="_blank" rel="noopener">Résumé</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recontech: Earl's startup group, with photos from real client work -->
+  <section class="studio" id="studio" aria-labelledby="studio-title">
+    <div class="studio-inner">
+      <div class="studio-text">
+        <div class="studio-brand">
+          <span class="studio-logo" role="img" aria-label="Recon Tech logo"></span>
+          <div>
+            <h2 id="studio-title">RECONTECH</h2>
+            <p class="muted">Startup group · Davao City · est. 2026</p>
+          </div>
+        </div>
+        <p class="studio-lede">We build the tools businesses actually run on, plus apps, games and AI agent setups. Small team, direct line to the people who write the code.</p>
+
+        <h3>Shipped</h3>
+        <ul class="studio-list">
+          <li><a href="#work-order-tracker">Work Order Tracker</a><span>Print shop operations, live since Sept 2026</span></li>
+          <li><a href="#recontech-agentic-tool">Recontech Agentic Tool</a><span>Desktop app for AI coding agents</span></li>
+        </ul>
+
+        <h3>Up next</h3>
+        <ul class="studio-list">
+          <li><span class="soon">Coming soon</span><span>Client project, details shortly</span></li>
+          <li><span class="soon">Coming soon</span><span>Client project, details shortly</span></li>
+        </ul>
+
+      </div>
+
+      <div class="studio-photos">
+        <figure class="ph ph-a"><img src="assets/img/studio-2.webp" alt="The Recontech team presenting a project at a café" width="825" height="1100" loading="lazy"><figcaption>Pitching a project</figcaption></figure>
+        <figure class="ph ph-b"><img src="assets/img/studio-4.webp" alt="Group photo with a client's staff" width="1100" height="825" loading="lazy"><figcaption>With a client's team</figcaption></figure>
+        <figure class="ph ph-c"><img src="assets/img/studio-3.webp" alt="Recontech team at a dinner meeting" width="1100" height="825" loading="lazy"><figcaption>Planning over dinner</figcaption></figure>
+        <figure class="ph ph-d"><img src="assets/img/studio-1.webp" alt="A working session at a café with a laptop" width="825" height="1100" loading="lazy"><figcaption>Working session</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work: a numbered index. Hover a row to see its screenshot; click to open it. -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <div class="filters" role="group" aria-label="Filter work">
+        <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All <sup>10</sup></button>
+        <button type="button" class="filter" data-filter="games" aria-pressed="false">Games <sup>5</sup></button>
+        <button type="button" class="filter" data-filter="apps" aria-pressed="false">Apps <sup>5</sup></button>
+        <button type="button" class="filter" data-filter="client" aria-pressed="false">Client <sup>1</sup></button>
+      </div>
+    </div>
+
+    <ol class="rows">
+
+      <li class="row" data-cat="apps" id="recontech-agentic-tool" data-img="assets/img/recontech-agentic-tool.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">01</span><span class="c-t">Recontech Agentic Tool</span><span class="c-k">Desktop app <span class="sep">·</span> TypeScript, Electron</span><span class="c-y">2026</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/recontech-agentic-tool.webp" alt="Recontech Agentic Tool: three AI coding terminals side by side with the brain graph" width="1200" height="696" loading="lazy">
+          <div class="row-text">
+            <p>A Windows app that runs up to six AI coding terminals side by side, all sharing one local memory. I designed and built it alone, from the terminal grid to the installer.</p>
+            <ul>
+              <li>A shared "brain" of past sessions and notes, searchable by meaning.</li>
+              <li>Terminals hand tasks to each other as Manager, Builder and Reviewer.</li>
+              <li>Falls back to free AI providers at a usage limit; works offline through Ollama.</li>
+            </ul>
+            <p class="links"><a href="https://erlruben.github.io/recontech-agentic-tool/" target="_blank" rel="noopener">Website</a><a href="https://github.com/erlruben/recontech-agentic-tool" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="games" id="blind-cargo" data-img="assets/img/blind-cargo.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">02</span><span class="c-t">Blind Cargo</span><span class="c-k">Game, in development <span class="sep">·</span> Unity, C#, Blender</span><span class="c-y">Steam</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/blind-cargo.webp" alt="Blind Cargo: the truck in the base hangar" width="960" height="600" loading="lazy">
+          <div class="row-text">
+            <p>A 3D driving game inspired by Filipino folklore, built around tense night driving. Coming to Steam.</p>
+            <ul>
+              <li>Networked night events, such as animals crossing the road, synced across players.</li>
+              <li>An AI-assisted Blender-to-Unity pipeline for props and characters.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="client apps" id="work-order-tracker" data-img="assets/img/work-order-tracker.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">03</span><span class="c-t">Work Order Tracker</span><span class="c-k">Client web app <span class="sep">·</span> React, Supabase</span><span class="c-y">2026</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/work-order-tracker.webp" alt="Work Order Tracker board, shown with sample data" width="1200" height="750" loading="lazy">
+          <div class="row-text">
+            <p>For Visuals in Motion Advertising, a print shop in Davao. Jobs used to move by phone call, so files got mixed up and late work went unseen. Now every order lives in one board, from the artist's desk to the press. Live for their staff since September 2026; I built and run it alone.</p>
+            <ul>
+              <li>One searchable table of every order, late jobs flagged in red.</li>
+              <li>A chat thread per order and a live print-queue screen for the press.</li>
+              <li>Status set from evidence (a file, a finished date, a print check), never typed.</li>
+            </ul>
+            <p class="links"><span class="muted">Private client code. Screenshot uses sample data. Ask me for a walkthrough.</span></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="games" id="wysteria" data-img="assets/img/wysteria.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">04</span><span class="c-t">Wysteria</span><span class="c-k">Game jam <span class="sep">·</span> Unity, WebGL</span><span class="c-y">Playable</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/wysteria.webp" alt="Wysteria title screen" width="900" height="557" loading="lazy">
+          <div class="row-text">
+            <p>A cozy top-down painting adventure made with team Re:Work for a game jam. You restore a faded forest with a magical paintbrush. I was the lead programmer.</p>
+            <p class="links"><button type="button" class="play" data-game="games/wysteria/index.html" data-title="Wysteria">Play it here</button><a href="https://reworks.itch.io/wysteria" target="_blank" rel="noopener">itch.io</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="apps" id="fnshedrink" data-img="assets/img/fnshedrink.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">05</span><span class="c-t">fnshedrink</span><span class="c-k">Kiosk app <span class="sep">·</span> Expo, React Native</span><span class="c-y">2026</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/fnshedrink.webp" alt="fnshedrink on a tablet: the menu beside the cart" width="1200" height="750" loading="lazy">
+          <div class="row-text">
+            <p>An ordering kiosk for a ceremonial matcha bar. Customers order on a tablet; staff manage the menu and orders behind a PIN.</p>
+            <ul>
+              <li>Menu and cart side by side on tablets, with notes per drink.</li>
+              <li>Live orders and a daily PDF sales report for the staff.</li>
+            </ul>
+            <p class="links"><a href="https://github.com/erlruben/fnshedrink" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="games" id="bangsak-multiplayer" data-img="assets/img/bangsak-multiplayer.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">06</span><span class="c-t">Bangsak Multiplayer</span><span class="c-k">Online game <span class="sep">·</span> Unity, Photon</span><span class="c-y">2021</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/bangsak-multiplayer.webp" alt="Bangsak Multiplayer: the village at sunset" width="929" height="600" loading="lazy">
+          <div class="row-text">
+            <p>Bangsak is the hide-and-seek we played on Filipino streets. I rebuilt it as an online game with separate hider and seeker characters.</p>
+            <ul>
+              <li>Photon lobby: create a room, browse open rooms, see who has joined.</li>
+            </ul>
+            <p class="links"><a href="https://erl-ruben.itch.io/bangsak-multiplayer" target="_blank" rel="noopener">itch.io</a><a href="https://github.com/erlruben/Bang-sak" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="apps" id="easystant" data-img="assets/img/easystant.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">07</span><span class="c-t">Easystant</span><span class="c-k">Chrome extension <span class="sep">·</span> JavaScript, AI</span><span class="c-y">2026</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/easystant.webp" alt="Easystant panel with a selected message and its actions" width="1200" height="750" loading="lazy">
+          <div class="row-text">
+            <p>Highlight any message on any website and Easystant rewrites it in the tone you pick, or turns it into a task with a title and priority.</p>
+            <p class="links"><a href="https://github.com/erlruben/Easystant" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="games" id="bangsak-street-games" data-img="assets/img/bangsak-street-games.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">08</span><span class="c-t">Bangsak Street Games</span><span class="c-k">Learning game <span class="sep">·</span> Unity</span><span class="c-y">2022</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/bangsak-street-games.webp" alt="Bangsak Street Games" width="710" height="498" loading="lazy">
+          <div class="row-text">
+            <p>A single-player game that teaches Bangsak, Patintero and other street games kids are forgetting.</p>
+            <p class="links"><a href="https://erl-ruben.itch.io/bangsak-learning-the-importance-of-filipino-street-games" target="_blank" rel="noopener">Play on itch.io</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="apps" id="soms-website" data-img="assets/img/soms.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">09</span><span class="c-t">S.O.M.S</span><span class="c-k">School web app <span class="sep">·</span> React, Express, MySQL</span><span class="c-y">2023</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/soms.webp" alt="S.O.M.S welcome screen at UIC" width="1200" height="750" loading="lazy">
+          <div class="row-text">
+            <p>The Student Offense Management System: UIC Davao staff record and follow up student offense cases in one place. I led the programming and design.</p>
+            <p class="links"><a href="https://github.com/erlruben/SOMS_Website" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+      </li>
+
+      <li class="row" data-cat="games" id="safe-leap" data-img="assets/img/safe-leap.webp">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="c-n">10</span><span class="c-t">Safe Leap</span><span class="c-k">Game, prototype <span class="sep">·</span> Unity</span><span class="c-y">Windows</span><span class="c-x" aria-hidden="true"></span>
+        </button>
+        <div class="row-body">
+          <img src="assets/img/safe-leap.webp" alt="Safe Leap title screen" width="797" height="473" loading="lazy">
+          <div class="row-text">
+            <p>A frog hops across a pond where some lily pads are phishing traps. A small game about spotting scams.</p>
+            <p class="links"><a href="https://erl-ruben.itch.io/safe-leap-build" target="_blank" rel="noopener">Download</a></p>
+          </div>
+        </div>
+      </li>
+
+    </ol>
+    <div class="preview" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <!-- Experience: plain rows, newest first -->
+  <section class="section xp" id="experience">
+    <div class="xp-grid">
+      <header class="xp-intro">
+        <h2>Experience</h2>
+        <p>Nine years, from animation intern to full-stack developer. Three roles right now, across apps, games and teaching.</p>
+        <a class="btn btn-line" href="Earl-Batenga-CV.pdf" target="_blank" rel="noopener">Full résumé (PDF)</a>
+      </header>
+
+      <div class="xp-list">
+        <article class="role">
+          <p class="role-top"><span class="now">Now</span><span>2025 — present</span></p>
+          <h3>Full-stack developer</h3>
+          <p class="role-org">RECONTECH · startup group</p>
+          <p class="role-text">Next.js and NestJS apps, a recommendation engine, 300+ automated tests, and client work like the Work Order Tracker.</p>
+        </article>
+        <article class="role">
+          <p class="role-top"><span class="now">Now</span><span>2024 — present</span></p>
+          <h3>QA engineer, testing and bug fixing</h3>
+          <p class="role-org">ODD Games</p>
+          <p class="role-text">I test and fix bugs on our main games, <strong>Monster Truck Destruction</strong> and <strong>Trucks Off Road</strong>. Both are coming soon to Steam, and Monster Truck Destruction is also coming to Nintendo Switch.</p>
+          <p class="role-tags"><span>Steam · soon</span><span>Nintendo Switch · soon</span></p>
+        </article>
+        <article class="role">
+          <p class="role-top"><span class="now">Now</span><span>2022 — present</span></p>
+          <h3>Game &amp; app development instructor</h3>
+          <p class="role-org">Mapúa Malayan Colleges Mindanao</p>
+          <p class="role-text">I teach Unity, React and Expo, write the course materials, and mentor student projects.</p>
+        </article>
+
+        <h3 class="xp-earlier">Earlier</h3>
+        <ol class="cv">
+          <li><span class="cv-y">2023</span><span class="cv-ro"><span class="cv-r">Game programmer, 3-month contract</span><span class="cv-o">Online Jobs PH</span></span><span class="cv-d">Game features, mechanics and performance work with a remote team.</span></li>
+          <li><span class="cv-y">2022</span><span class="cv-ro"><span class="cv-r">API developer intern</span><span class="cv-o">Galileo Software Services</span></span><span class="cv-d">Designed and tested APIs with Postman.</span></li>
+          <li><span class="cv-y">2021</span><span class="cv-ro"><span class="cv-r">Game developer intern</span><span class="cv-o">Ikigai Studios</span></span><span class="cv-d">Game features and UI under senior developers.</span></li>
+          <li><span class="cv-y">2017</span><span class="cv-ro"><span class="cv-r">Animation &amp; data research intern</span><span class="cv-o">IdeaHub</span></span><span class="cv-d">2D/3D animation and visual assets.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & education: three cards -->
+  <section class="section skills" id="skills" aria-labelledby="skills-title">
+    <div class="section-head"><h2 id="skills-title">Skills &amp; education</h2></div>
+    <div class="cards3">
+      <div class="card">
+        <p class="card-kicker">Apps &amp; web</p>
+        <ul class="card-list">
+          <li>React, React Native, Expo</li><li>Next.js, Vite, Tailwind</li><li>Node.js, Express, NestJS</li>
+          <li>Supabase, MongoDB, MySQL</li><li>REST APIs</li><li>Chrome extensions, Electron</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="card-kicker">Games</p>
+        <ul class="card-list">
+          <li>Unity 6, C#</li><li>Photon multiplayer</li><li>Phaser, WebGL builds</li>
+          <li>Blender to Unity pipelines</li><li>Game design</li><li>QA testing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="card-kicker">Education</p>
+        <dl class="edu">
+          <div><dt>Master's in Information Technology</dt><dd>UIC Davao · 2023–2025</dd></div>
+          <div><dt>Game Development</dt><dd>Mapúa Malayan Colleges Mindanao · 2018–2022</dd></div>
+        </dl>
+        <p class="card-foot">English, Filipino, Cebuano</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates: cards built for the real certificate images; a Verify link shows when a credential URL is set -->
+  <section class="section certs-sec" id="certificates" aria-labelledby="certs-title">
+    <div class="section-head"><h2 id="certs-title">Certificates</h2><span class="muted">6 earned</span></div>
+    <ul class="cert-grid">
+      <li class="cert" data-issuer="Coursera" data-img="assets/img/certs/google-ai-professional.png" data-full="assets/img/certs/cert-google-ai.webp" data-verify="https://www.credly.com/badges/2f991ebe-a82d-47eb-971c-80bba5b59572"><div class="cert-img"><span>Coursera</span></div><div class="cert-body"><h3>Google AI Professional Certificate</h3><p>Google · Coursera · Jun 2026</p></div></li>
+      <li class="cert" data-issuer="IBM" data-img="assets/img/certs/back-end-development.png" data-full="assets/img/certs/cert-back-end.webp" data-verify="https://www.credly.com/badges/7c0b9457-a669-46bf-871f-00f065e32a92"><div class="cert-img"><span>IBM SkillsBuild</span></div><div class="cert-body"><h3>Back-End Development</h3><p>IBM SkillsBuild · Jun 2026</p></div></li>
+      <li class="cert" data-issuer="IBM" data-img="assets/img/certs/front-end-web-development.png" data-full="assets/img/certs/cert-front-end.webp" data-verify="https://www.credly.com/badges/87850337-a96a-43c4-8636-db9a962f72aa"><div class="cert-img"><span>IBM SkillsBuild</span></div><div class="cert-body"><h3>Front-End Web Development</h3><p>IBM SkillsBuild · Jun 2026</p></div></li>
+      <li class="cert" data-issuer="IBM" data-img="assets/img/certs/web-dev-fundamentals.png" data-full="assets/img/certs/cert-web-dev.webp" data-verify="https://www.credly.com/badges/e58b4606-e169-4f18-8c2f-8dadffef0deb"><div class="cert-img"><span>IBM SkillsBuild</span></div><div class="cert-body"><h3>Web Development Fundamentals</h3><p>IBM SkillsBuild · Jun 2026</p></div></li>
+      <li class="cert cert-doc" data-issuer="GitHub" data-img="assets/img/certs/cert-github.webp" data-full="assets/img/certs/cert-github.webp" data-verify="https://www.linkedin.com/learning/certificates/59ad66592837a5dc04723cb38ea5e0b9bbb4a20d7e557b915fb55cc1ff06b3a2"><div class="cert-img"><span>GitHub</span></div><div class="cert-body"><h3>Career Essentials in GitHub Professional Certificate</h3><p>GitHub · LinkedIn Learning · Mar 2024</p></div></li>
+      <li class="cert" data-issuer="Apple" data-img="assets/img/certs/swift-associate.png" data-full="assets/img/certs/cert-swift.webp" data-verify="https://www.credly.com/badges/47808d04-7905-4911-a3a3-693a9003c857"><div class="cert-img"><span>Apple</span></div><div class="cert-body"><h3>App Development with Swift Associate</h3><p>Apple · via Certiport · Dec 2023</p></div></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="footer-head">
+    <p class="footer-label">Say hello</p>
+    <h2 class="footer-title">Let's connect!</h2>
+  </div>
+  <div class="footer-actions">
+    <a class="cta" href="Earl-Batenga-CV.pdf" target="_blank" rel="noopener">
+      <span class="cta-kicker">For employers</span>
+      <strong class="cta-title">Download my résumé</strong>
+      <span class="cta-text">Experience, certificates and every way to reach me, in one PDF.</span>
+    </a>
+    <a class="cta" href="mailto:erlrbn.dev@gmail.com?subject=Project%20for%20Recontech">
+      <span class="cta-kicker">For clients</span>
+      <strong class="cta-title">Contact Recontech</strong>
+      <span class="cta-text">Tell us what you need, and we'll get back to you.</span>
+    </a>
+  </div>
+  <div class="footer-row">
+    <span>Davao City, PH · <time class="clock" datetime="">--:--</time> PHT (UTC+8)</span>
+    <span><a href="https://github.com/erlruben" target="_blank" rel="noopener">GitHub</a> <a href="https://www.linkedin.com/in/erlruben/" target="_blank" rel="noopener">LinkedIn</a> <a href="https://erl-ruben.itch.io/" target="_blank" rel="noopener">itch.io</a></span>
+    <span>© 2026 Earl Batenga</span>
+  </div>
+</footer>
+
+<dialog class="viewer" id="viewer" aria-label="Certificate">
+  <div class="viewer-bar"><strong class="viewer-title">Certificate</strong><button type="button" class="viewer-close">Close</button></div>
+  <img class="viewer-img" alt="">
+</dialog>
+
+<dialog class="player" id="player" aria-label="Game player">
+  <div class="player-bar">
+    <strong class="player-title">Game</strong>
+    <span class="player-note">Loads about 50 MB. Best on a computer.</span>
+    <button type="button" class="player-full">Full screen</button>
+    <button type="button" class="player-close">Close</button>
+  </div>
+  <div class="player-frame"></div>
+</dialog>
+
+<script src="assets/js/main.js?v=29" defer></script>
+</body>
+</html>

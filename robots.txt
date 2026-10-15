@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://erlruben.github.io/sitemap.xml
