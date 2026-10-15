@@ -67,6 +67,7 @@ ol, ul { padding: 0; list-style: none; }
 .theme-toggle .i-sun { display: none; }
 [data-theme="light"] .theme-toggle .i-sun { display: block; }
 [data-theme="light"] .theme-toggle .i-moon { display: none; }
+.bar-mark { grid-column: 1; justify-self: start; font: 700 16px/1 var(--display); letter-spacing: -.01em; color: inherit; text-decoration: none; }
 .bar-links { grid-column: 2; display: flex; gap: 28px; }
 .theme-toggle { grid-column: 3; justify-self: end; }
 .bar-links a { text-decoration: none; color: var(--muted); transition: color .2s; }
@@ -415,6 +416,9 @@ ol, ul { padding: 0; list-style: none; }
   .studio-photos { grid-row: 1; max-width: none; justify-self: stretch; grid-auto-rows: clamp(30px, 7vw, 52px); }
   .preview { display: none; }
   .hero-caption, .hero-ticks { display: none; }
+}
+@media (max-width: 700px) {
+  .bar-mark { display: none; }
 }
 @media (max-width: 560px) {
   :root { --m: 16px; --g: 16px; }
