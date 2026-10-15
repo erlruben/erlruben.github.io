@@ -217,14 +217,17 @@ ol, ul { padding: 0; list-style: none; }
 .cv-tags span { font-size: 12px; padding: 3px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
 
 
-/* ---------- Experience: sticky heading on the left, current roles as cards ---------- */
-.xp-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(32px, 5vw, 72px); border-top: 1px solid var(--line); padding-top: 28px; }
-.xp-intro { position: sticky; top: 90px; align-self: start; }
+/* ---------- Experience: heading on top, current roles side by side, earlier roles below ---------- */
+.xp-grid { display: grid; gap: clamp(24px, 3vw, 40px); border-top: 1px solid var(--line); padding-top: 28px; }
+.xp-intro { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: var(--g); }
+.xp-intro h2 { grid-column: 1 / -1; }
+.xp-intro .btn { margin-bottom: 20px; }
 .xp-intro h2 { font: 800 clamp(30px, 3.2vw, 44px)/1 var(--display); letter-spacing: -.02em; margin-bottom: 14px; }
 .xp-intro p { color: var(--text-2); margin-bottom: 20px; max-width: 26em; }
 .btn-line { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn-line:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .xp-list { display: grid; gap: 14px; }
+.xp-now { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--g); }
 .role { padding: 22px 24px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg-2); transition: border-color .25s; }
 .role:hover { border-color: var(--accent); }
 .role-top { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
@@ -402,8 +405,9 @@ ol, ul { padding: 0; list-style: none; }
   .row-inner > img { margin-bottom: 0; }
   .row-text > :first-child { margin-top: 16px; }
   .cv li { grid-template-columns: 100px minmax(0, 1fr); }
-  .xp-grid { grid-template-columns: 1fr; }
-  .xp-intro { position: static; }
+  .xp-now { grid-template-columns: 1fr; }
+  .xp-intro { grid-template-columns: 1fr; }
+  .xp-intro .btn { justify-self: start; }
   .cards3, .cert-grid { grid-template-columns: 1fr 1fr; }
   .cv-d { grid-column: 2; }
     .studio-inner, .about-inner { grid-template-columns: 1fr; }
