@@ -161,13 +161,15 @@
   const viewer = document.getElementById('viewer');
   document.querySelectorAll('.cert').forEach(cert => {
     const title = cert.querySelector('h3').textContent;
+    // "Google AI Professional Certificate" already ends in the word
+    const label = /certificate$/i.test(title) ? title : `${title} certificate`;
     if (cert.dataset.img) {
       const box = cert.querySelector('.cert-img');
-      box.innerHTML = `<img src="${cert.dataset.img}" alt="${title} certificate" loading="lazy"><button type="button" aria-label="View the ${title} certificate"></button>`;
+      box.innerHTML = `<img src="${cert.dataset.img}" alt="${label}" loading="lazy"><button type="button" aria-label="View the ${label}"></button>`;
       box.querySelector('button').addEventListener('click', () => {
         viewer.querySelector('.viewer-title').textContent = title;
         const img = viewer.querySelector('.viewer-img');
-        img.src = cert.dataset.full || cert.dataset.img; img.alt = `${title} certificate`;
+        img.src = cert.dataset.full || cert.dataset.img; img.alt = label;
         viewer.showModal();
       });
     }
