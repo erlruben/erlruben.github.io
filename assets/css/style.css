@@ -234,11 +234,12 @@ ol, ul { padding: 0; list-style: none; }
 .btn-line { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn-line:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .xp-list { display: grid; gap: 14px; }
-.xp-now { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--g); }
-.role { padding: 22px 24px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg-2); transition: border-color .25s; }
-.role:hover { border-color: var(--accent); }
+.xp-now { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 4vw, 56px); }
+/* current roles sit straight on the page: no card, no border, aligned with the heading and the Earlier list */
+.role { padding: 0; }
 .role-top { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-.now { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 500; color: var(--ink); border: 1px solid var(--line); }
+/* plain label: just a gold dot and the word, no pill */
+.now { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 500; color: var(--ink); }
 .now::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
 .role h3 { font: 700 clamp(18px, 1.6vw, 21px)/1.2 var(--display); letter-spacing: -.01em; }
 .role-org { color: var(--muted); font-size: 14px; margin: 3px 0 10px; }
@@ -439,7 +440,6 @@ ol, ul { padding: 0; list-style: none; }
   .row-inner { grid-template-columns: 0 minmax(0, 1fr); column-gap: 0; }
   .cv li { grid-template-columns: 1fr; gap: 2px; }
   .cards3, .cert-grid { grid-template-columns: 1fr; }
-  .role { padding: 18px; }
   .cv-d { grid-column: 1; }
     .footer-row { flex-direction: column; }
   .footer-actions { grid-template-columns: 1fr; }
